@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\BookListRazor\\BookListRazor.csproj": {}
+    "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\book-list-razor\\BookListRazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\BookListRazor\\BookListRazor.csproj": {
+    "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\book-list-razor\\BookListRazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\BookListRazor\\BookListRazor.csproj",
+        "projectUniqueName": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\book-list-razor\\BookListRazor.csproj",
         "projectName": "BookListRazor",
-        "projectPath": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\BookListRazor\\BookListRazor.csproj",
+        "projectPath": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\book-list-razor\\BookListRazor.csproj",
         "packagesPath": "C:\\Users\\IfeanyiTavia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\BookListRazor\\obj\\",
+        "outputPath": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\book-list-razor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -42,6 +42,26 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
