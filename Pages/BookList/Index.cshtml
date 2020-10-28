@@ -2,7 +2,7 @@
 @model BookListRazor.Pages.BookList.IndexModel
 
 
-<br/>
+<br />
 <div class="container row p-0 m-0">
     <div class="col-9">
         <h2 class="text-info">Book List</h2>
@@ -32,23 +32,23 @@
                             <label>Actions</label>
                         </th>
                     </tr>
-                    @foreach(var item in Model.Books)
+                    @foreach (var item in Model.Books)
                     {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(m => item.Name)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(m => item.Author)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(m => item.ISBN)
-                    </td>
-                    <td class="text-center">
-                        <button class="btn btn-danger btn-sm">Delete</button>
-                        <a class="btn btn-success btn-sm text-white">Edit</a>
-                    </td>
-                </tr>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(m => item.Name)
+                            </td>
+                            <td class="text-center">
+                                @Html.DisplayFor(m => item.Author)
+                            </td>
+                            <td class="text-center">
+                                @Html.DisplayFor(m => item.ISBN)
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                                <a class="btn btn-success btn-sm text-white">Edit</a>
+                            </td>
+                        </tr>
                     }
                 </table>
             }
