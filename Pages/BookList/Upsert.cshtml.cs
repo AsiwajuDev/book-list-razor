@@ -37,7 +37,6 @@ namespace BookListRazor.Pages.BookList
                 return NotFound();
             }
             return Page();
-            Book = await _db.Book.FindAsync(id);
         }
 
         public async Task<IActionResult> OnPost()
@@ -46,10 +45,12 @@ namespace BookListRazor.Pages.BookList
             {
                 if(Book.Id == 0)
                 {
+                    //create new post
                     _db.Book.Add(Book);
                 }
                 else
                 {
+                    //update existing record
                     _db.Book.Update(Book);
                 }
 
